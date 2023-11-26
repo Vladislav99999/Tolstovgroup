@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tolstovgroup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop id="myVideo">
+                <source src="/video/bg.mp4" type="video/mp4">
+            </video>
+            <div class="nav-header">
+                <div class="logo"><img src="/img/Logo.png" alt="logo"></div>
+                <div class="wrapp-header">
+                    <div class="header_imet">
+                        <h1>SERVS</h1>
+                    </div>
+                    <div class="header_imet">
+                        <h3>флагманский поставщик серверов и комплектующих в России</h3>
+                    </div>
+                    <button class="btn header_imet">Смотреть каталог</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-main">
+        <img class="ellipse56" src="/img/Ellipse 56.png" alt="">
+        <img class="ellipse60" src="/img/Ellipse 60.png" alt="">
+        <img class="ellipse57" src="/img/Ellipse 57.png" alt="">
+        <img class="ellipse61" src="/img/Ellipse 61.png" alt="">
+        <div class="container">
+            <div class="main">
+                <h2>конфигуратор сервера</h2>
+                <div class="wrapp-main">
+                    <div class="accordion">
+                        <input type="checkbox" id="section1" class="accordion-checkbox">
+                        <label class="accordion-item" for="section1" onclick="toggleAccordion(this)">
+                            <div class="accordion-header" id="click-accord">
+                                <img class="dropdown" src="/img/dropdown.svg" alt="dropdown">
+                                <h3>Выбор сервера под задачу</h3>
+                            </div>
+                            <div class="accordion-content server_selection">
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/1c.svg" alt="1c">
+                                    <p>Для 1С</p>
+                                </a>
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/office.svg" alt="office">
+                                    <p>Для офиса</p>
+                                </a>
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/file.svg" alt="file">
+                                    <p>Файловый</p>
+                                </a>
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/virtualization.svg" alt="virtualization">
+                                    <p>Для виртуализации</p>
+                                </a>
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/domen controller.svg" alt="domen">
+                                    <p>Контроллер домена</p>
+                                </a>
+                                <a href="" class="server_selection-imet">
+                                    <img src="/img/hosting.svg" alt="hosting">
+                                    <p>Для хостинга</p>
+                                </a>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="section2" class="accordion-checkbox">
+                        <label class="accordion-item" for="section2" onclick="toggleAccordion(this)">
+                            <div class="accordion-header" id="click-accord">
+                                <img class="dropdown" src="/img/dropdown.svg" alt="dropdown">
+                                <h3>производитель
+                                    <button onclick="togglePopup()">
+                                        <img src="/img/tooltip.svg" alt="tooltip">
+                                    </button>
+                                    <div class="popup" id="tooltipPopup">
+                                        <div class="popup-content">
+                                            <span class="close" onclick="togglePopup()"><img src="/img/close.svg"
+                                                    alt="close"></span>
+                                            <div class="popup-text">
+                                                <h4>Какого производителя выбрать?</h4>
+                                                <p>Серверное оборудование новое или б/у необходимо для технического
+                                                    оснащения
+                                                    офисов и предприятий малого, среднего, крупного бизнеса.
+                                                    Высокопроизводительная техника справляется с широким спектром задач,
+                                                    обеспечивает эффективную работу компании и хранит большой объем
+                                                    необходимых
+                                                    данных.</p>
+                                                <p>Стоимость серверных платформ соответствует техническим
+                                                    характеристикам
+                                                    устройств, поэтому следует внимательно отнестись к выбору
+                                                    конфигурации и
+                                                    заранее определить рамки бюджета.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h3>
+                            </div>
+                            <div class="accordion-content manufacturer">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1"></label>
+                                    <span>HP</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox2">
+                                    <label for="checkbox2"></label>
+                                    <span>Dell</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox3">
+                                    <label for="checkbox3"></label>
+                                    <span>Intel</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox4">
+                                    <label for="checkbox4"></label>
+                                    <span>Supermicro</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox5">
+                                    <label for="checkbox5"></label>
+                                    <span>Cisco</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox6">
+                                    <label for="checkbox6"></label>
+                                    <span>Huawei</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox7">
+                                    <label for="checkbox7"></label>
+                                    <span>Asus</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox8">
+                                    <label for="checkbox8"></label>
+                                    <span>IBM</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox9">
+                                    <label for="checkbox9"></label>
+                                    <span>Lenovo</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox10">
+                                    <label for="checkbox10"></label>
+                                    <span>Fujitsu</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="section3" class="accordion-checkbox">
+                        <label class="accordion-item" for="section3" onclick="toggleAccordion(this)">
+                            <div class="accordion-header" id="click-accord">
+                                <img class="dropdown" src="/img/dropdown.svg" alt="dropdown">
+                                <h3>тип сервера</h3>
+                            </div>
+                            <div class="accordion-content server_type">
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio1" name="group1">
+                                    <label for="radio1"></label>
+                                    <span>1U Rock</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio2" name="group1">
+                                    <label for="radio2"></label>
+                                    <span>2U Rock</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio3" name="group1">
+                                    <label for="radio3"></label>
+                                    <span>3U Rock</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio4" name="group1">
+                                    <label for="radio4"></label>
+                                    <span>4U Rock</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio5" name="group1">
+                                    <label for="radio5"></label>
+                                    <span>5U Rock</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio6" name="group1">
+                                    <label for="radio6"></label>
+                                    <span>Tower</span>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="radio7" name="group1">
+                                    <label for="radio7"></label>
+                                    <span>Blade</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="section4" class="accordion-checkbox">
+                        <label class="accordion-item" for="section4" onclick="toggleAccordion(this)">
+                            <div class="accordion-header" id="click-accord">
+                                <img class="dropdown" src="/img/dropdown.svg" alt="dropdown">
+                                <h3>процессор</h3>
+                            </div>
+                            <div class="accordion-content cpu">
+                                <div class="custom-range">
+                                    <label for="rangeValues">
+                                        <h4>базовая частота</h4>
+                                    </label>
+                                    <div class="range-container">
+                                        <input type="range" id="rangeMin" min="1.8" max="3.5" value="1.8" step="0.1"
+                                            oninput="updateRange()">
+                                        <input type="range" id="rangeMax" min="1.8" max="3.5" value="3.5" step="0.1"
+                                            oninput="updateRange()">
+                                    </div>
+                                    <div id="rangeValues">
+                                        <span id="minLabel"><span>от</span> 1.8 Ghz</span>
+                                        <span id="maxLabel"><span>до</span> 3.5 Ghz</span>
+                                    </div>
+                                </div>
+
+                                <div class="custom-range select-range">
+                                    <label for="rangeValues">
+                                        <h4>Количество дисков</h4>
+                                    </label>
+                                    <input type="range" id="rangeInput" min="1" max="12" step="1" value="6"
+                                        oninput="updateSelectValue()">
+                                    <div class="custom-select-container">
+                                        <select class="custom-select" id="selectValue" onchange="updateRangeValue()">
+                                            <!-- Add options with values 1 to 12 -->
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6" selected>6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <div class="select-buttons">
+                                            <button id="btnPlus" onclick="adjustRangeValue(1)"><img
+                                                    src="/img/arrow-top.png" alt="top"></button>
+                                            <button id="btnMinus" onclick="adjustRangeValue(-1)"><img
+                                                    src="/img/arrow-bottom.png" alt="bottom"></button>
+                                        </div>
+                                    </div>
+                                    <div id="rangeValues">
+                                        <span id="minLabel"><span>1 диск</span></span>
+                                        <span id="maxLabel"><span>12 дисков</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <img class="ellipse59" src="/img/Ellipse 59.png" alt="">
+        <img class="ellipse62" src="/img/Ellipse 62.png" alt="">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
